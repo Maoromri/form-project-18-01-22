@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="he">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>101 Form</title>
+
+    <style>
+          h1 {
+            background-color: lightblue;
+          }
+          h2 {
+            background-color: lightgray;
+            display: inline;
+          }
+h3{ 
+}
+          body {
+            font-family: sans-serif;
+            direction: rtl;
+          }
+          .box {
+            display: inline-block;
+          }
+          table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    </style>
+  </head>
+
+  <body>
+    <div style="text-align: center">
+      <h1>טופס 101</h1>
+      <!-- need to add some text shadow-->
+      <h2 style="font-size: 50px">כרטיס עובד</h2> 
+      <br><br>
+      <div>
+        <label for="number" style="font-size: 20px;">שנת המס</label>
+        <input type="number" value="2022" min="2020" />
+      </div>
+      <!--need to find some atth for the years numbers -->
+    </div>
+
+    <form action="https://formspree.io/f/mzbodvje" method="POST">
+      <div>
+        <h3>1.פרטי המעביד:</h3>
+        <input type="text" placeholder="שם המעביד" name="name" value="שם המעביד" />
+        <input type="text" placeholder="כתובת" name="address" value="כתובת" />
+        <input
+          type="number"
+          placeholder="מספר טלפון"
+          name="number"
+          value="mtel"
+        />
+        <input
+          type="number"
+          placeholder="מספר תיק ניכויים"
+          name="number"
+          value="mtn"
+        />
+      </div>
+
+      <div>
+        <h3>2.פרטי העובד:</h3>
+        <!--    <textarea name="" id="ta1" cols="16" rows="1">
+מספר תעודת זהות (9 ספרות)</textarea>
+        >-->
+
+        <input type="number" placeholder="מספר תעודת זהות" name="number" />
+        <input type="text" placeholder=" שם פרטי" name="name" />
+        <input type="text" placeholder="שם משפחה" name="address" />
+        <input type="number" placeholder="מספר טלפון" name="numbers" />
+        <input
+          type="number"
+          placeholder="מספר דרכון(למי שאין ת.ז)"
+          name="passport"
+        />
+      </div>
+
+      <div class="box">
+        <h4>תאריך עליה</h4>
+        <input type="date" />
+      </div>
+      <div class="box" style="">
+        <h4>תאריך לידה</h4>
+        <input type="date" />
+        <input type="text" placeholder="כתובת" name="address" />
+      </div>
+      <br />
+      <br />
+
+      <table>
+        <thead>
+          <tr>
+            <th>רחוב</th>
+            <th>מספר</th>
+            <th>עיר יישוב</th>
+            <th>מיקוד</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="text" name="address" /></td>
+            <td>
+              <input type="number" name="numbers" />
+            </td>
+            <td><input type="text" name="address" /></td>
+            <td>
+              <input type="number" name="number" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table>
+        <thead>
+          <tr>
+            <th>מין</th>
+            <th>מצב משפחתי</th>
+            <th>תושב ישראל</th>
+            <th>חבר קיבוץ/מושב שיתופי</th>
+            <th>חבר בקופת חולים</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <input
+                type="radio"
+                name="egender"
+                id="gender"
+                value="gender"
+              />זכר
+              <input
+                type="radio"
+                name="egender"
+                id="gender"
+                value="gender"
+              />נקבה
+            </td>
+
+            <td>
+
+              <input type="radio" name="status" value="status"/>נשוי
+              <input type="radio" name="status" />פרוד/ה
+              <input type="radio" name="status" />גרוש/ה
+           </td>
+
+            <td><input type="radio" name="israel" />כן
+              <input type="radio" name="israel" />לא/ה</td>
+            <td><input type="radio" name="friend" />כן
+              <input type="radio" name="friend" />לא</td>
+</td>
+<br>
+            <td><input type="radio" name="Kupa" />לא
+              <input type="radio" name="Kupa" /> כן, שם הקופה </td>
+            
+            <td>
+              <input type="text" name="Kupa" id="Kupa"/>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+<br>
+      <div class="box">
+        <label for="email">כתובת דואר אלקטרוני</label>
+        <br><input type="email"
+        id="email" value="" placeholder="example@example.com">
+        </div>
+         <div class="box"> 
+        <label for="number">מספר טלפון</label> <br>
+        <input type="number" placeholder="___/_______">
+        </div>
+       <div class="box">
+        <label for="number"> מספר טלפון נייד</label><br>
+        <input type="number" placeholder="__/_______">
+        </div>
+      
+<div class="">
+  <h3> 3.פרטים על ילדיי שבשנת המס טרם מלאו להם 19 שנה</h3>
+
+  <table>
+    <thead>
+      <tr>
+    <th> שם </th>
+        <th> מספר זהות</th>
+            <th> תאריך לידה</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+<tr>
+        <td><input type="text"></td>
+        <td><input type="numbers"></td>
+        <td><input type="date"></td>
+        </tr>
+        <tr>
+        <td><input type="text"</td>
+        <td><input type="numbers"></td>
+        <td><input type="date"></td>
+        </tr>
+         <tr>
+        <td><input type="text"</td>
+        <td><input type="numbers"></td>
+        <td><input type="date"></td>
+        </tr>
+        <tr>
+        <td><input type="text"</td>
+        <td><input type="numbers"></td>
+        <td><input type="date"></td>
+        </tr>       
+        <tr>
+        <td><input type="text"</td>
+        <td><input type="numbers"></td>
+        <td><input type="date"></td>
+        </tr>
+        <tr>
+        <td><input type="text"</td>
+        <td><input type="numbers"></td>
+        <td><input type="date"></td>
+        </tr>
+         <tr>
+        <td><input type="text"</td>
+        <td><input type="numbers"></td>
+        <td><input type="date"></td>
+        </tr>
+        <tr>
+        <td><input type="text"</td>
+        <td><input type="numbers"></td>
+        <td><input type="date"></td>
+        </tr>             
+        </tbody>
+      <tr>
+        
+        </tr>
+      </table>
+      <br><br>
+  </div>
+<div class="box" style="border: solid;">
+  <h4>פרטים על הכנסותיי ממעביד זה</h4>
+      <input type="checkbox" id="money"
+      >
+      <label for="month">משכורת חודש</label>
+<div>
+ <input type="checkbox" id="money"
+      >      <label for="money">משכורת בעד משרה נוספת
+     
+      </div>
+<div>
+   <input type="checkbox" id="money"
+      >
+      <label for="money">משכורת חלקית</label>
+</div>
+<div>
+ <input type="checkbox" id="money"
+      >      <label for="money">שכר עבודה (עובד יומי)</label></div> 
+<div>
+ <input type="checkbox" id="money">      <label for="money">קצבה</label>
+      </div> 
+<div>
+   <input type="checkbox" id="money"
+      >
+      <label for="money">מלגה</label></div> 
+</div>
+<br><br>
+    <div>
+        <h3>4.פרטים על בן/בת הזוג:</h3>
+        <!--    <textarea name="" id="ta1" cols="16" rows="1">
+מספר תעודת זהות (9 ספרות)</textarea>
+        >-->
+
+        <input type="number" placeholder="מספר תעודת זהות" name="number" />
+        <input type="text" placeholder=" שם פרטי" name="name" />
+        <input type="text" placeholder="שם משפחה" name="address" />
+     <label for="date"> ת.לידה</label>  <input type="date" /> 
+            <label for="date"> ת.עליה</label>  <input type="date" /> 
+
+        <input
+          type="number"
+          placeholder="מספר דרכון(למי שאין ת.ז)"
+          name="passport"
+        /> 
+        <br>        <br>
+    </div>
+        <div style="display: inline-block;">  
+           <input type="checkbox" id="na" name="na"> 
+  <label for="na"> אין לבין/לבת הזוג הכנסה נוספת</label>  
+      
+           <input type="checkbox" id="a">
+  <label style="b" for="a" value="m" name="a"> יש לבין/לבת הזוג הכנסה נוספת מ:</label>  
+ 
+  <input type="checkbox" id="a1">
+  <label for="a1" value="a1" name="a1">עבודה/קצבה/עסק</label>  
+<input type="checkbox" id="a2">
+  <label for="a2" value="a2" name="a1">הכנסה אחרת</label>  
+      </div>
+
+<div>
+ <h3> 5.שינויים במהלך השנה: </h3>
+
+<table>
+        <thead>
+          <tr>
+            <th>תאריך השינוי</th>
+            <th>פ ר ט י - ה ש י נ ו י </th>
+            <th>תאריך ההודעה</th>
+            <th>חתימת העובד/ת</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td> <input type="date" /></td>
+            <td>
+                    <input type="textarea" />
+            </td>
+            <td><input type="date"  /></td>
+            <td>
+              <input type="text"  />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+<br><br>
+
+  <div style="border: solid;">
+    <h3> 6.הצהרה</h3>
+<p>
+
+אני מצהיר/ה כי הפרטים שמסרתי בטופס זה הינם מלאים ונכונים. ידוע לי שהשמטה או מסירת פרטים לא נכונים הינה עבירה על פקודת
+מס הכנסה. אני מתחייב/ת להודיע למעביד על כל שינוי שיחול בפרטיי האישיים ובפרטים דלעיל תוך שבוע ימים מתאריך השינוי.
+  </p>
+  <span style="text-align: center;">
+  תאריך:<input type="date"</span>
+  <span style="text-align: center;">חתימה_____________</span>
+    </div>
+
+<br><br>
+<span style="background-color: khaki;">
+     <button>שלח את הטופס</button>
+     </span>
+      
+    </form>
+  </body>
+</html>
