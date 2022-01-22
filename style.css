@@ -44,7 +44,7 @@ input:invalid {
   background-color: #ce1919;
 }
 input:required {
-  background-color: lightgreen;
+  background-color: #d0f4ea;
 }
 
 div h3 {
@@ -56,7 +56,9 @@ div h3 {
   padding-inline-start: 2px;
 }
 table thead tr th {
-  background-color: lightgrey;
+  color: #005900;
+  background: #fffca8;
+  text-shadow: #fffca8 2px 2px 0px, #9c9c9c 4px 4px 0px;
 }
 .eliya thead tr th {
   background-color: lightpink;
