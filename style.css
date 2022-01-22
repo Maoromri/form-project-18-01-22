@@ -1,0 +1,82 @@
+h1 {
+  background-color: #25283d;
+  color: white;
+  box-shadow: 5px -2px 16px 5px #25283d;
+}
+h2 {
+  background-color: #efd9ce;
+  display: inline;
+  box-shadow: 5px -2px 16px;
+  font-size: 5vw;
+}
+h3 {
+  box-shadow: 5px -2px 16px;
+  display: inline-block;
+  background-color: #fff3f0;
+}
+
+body {
+  font-family: sans-serif;
+  direction: rtl;
+}
+.box {
+  display: inline-block;
+  font-size: 25px;
+  color: transparent;
+  background: #ffffff;
+  text-shadow: -4px 4px rgba(179, 179, 179, 0.4),
+    -3px 3px rgba(153, 153, 153, 0.2), -2px 2px rgba(179, 179, 179, 0.2),
+    -1px 1px rgba(179, 179, 179, 0.2), 0px 0px rgba(128, 128, 128, 0.5),
+    1px -1px rgba(77, 77, 77, 0.6), 2px -2px rgba(77, 77, 77, 0.7),
+    3px -3px rgba(82, 82, 82, 0.8), 4px -4px rgba(77, 77, 77, 0.9),
+    5px -5px rgba(77, 77, 77, 1), 2px 2px 8px rgba(255, 255, 255, 0.39);
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.maor h3 {
+  text-shadow: 2px 2px 8px blue;
+}
+input:invalid {
+  background-color: #ce1919;
+}
+input:required {
+  background-color: lightgreen;
+}
+
+div h3 {
+  text-shadow: 2px 2px 8px #829399;
+}
+.avital {
+  display: block;
+  background-color: lightyellow;
+  padding-inline-start: 2px;
+}
+table thead tr th {
+  background-color: lightgrey;
+}
+.eliya thead tr th {
+  background-color: lightpink;
+}
+.eliya tr td {
+  background-color: lightsteelblue;
+}
+p {
+  color: #000000;
+  background: #ffffff;
+  text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+}
+#ilay {
+}
+
+a[href$=".pdf"]::before {
+  background-size: 15px 15px;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  content: "";
+  background-image: url("https://www.hinicio.com/file/2016/06/pdf-icon-150x150.png");
+}

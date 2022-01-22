@@ -1,39 +1,20 @@
 <!DOCTYPE html>
 <html lang="he">
   <head>
+    
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>101 Form</title>
+    <link rel="stylesheet" href="style.css" />
 
-    <style>
-          h1 {
-            background-color: lightblue;
-          }
-          h2 {
-            background-color: lightgray;
-            display: inline;
-          }
-h3{ 
-}
-          body {
-            font-family: sans-serif;
-            direction: rtl;
-          }
-          .box {
-            display: inline-block;
-          }
-          table, th, td {
-      border: 1px solid black;
-      border-collapse: collapse;
-    </style>
   </head>
 
   <body>
     <div style="text-align: center">
       <h1>טופס 101</h1>
       <!-- need to add some text shadow-->
-      <h2 style="font-size: 50px">כרטיס עובד</h2> 
+      <h2 >כרטיס עובד</h2> 
       <br><br>
       <div>
         <label for="number" style="font-size: 20px;">שנת המס</label>
@@ -43,7 +24,7 @@ h3{
     </div>
 
     <form action="https://formspree.io/f/mzbodvje" method="POST">
-      <div>
+      <div class="maor">
         <h3>1.פרטי המעביד:</h3>
         <input type="text" placeholder="שם המעביד" name="name" value="שם המעביד" />
         <input type="text" placeholder="כתובת" name="address" value="כתובת" />
@@ -59,9 +40,10 @@ h3{
           name="number"
           value="mtn"
         />
+
       </div>
 
-      <div>
+      <div class="maor">
         <h3>2.פרטי העובד:</h3>
         <!--    <textarea name="" id="ta1" cols="16" rows="1">
 מספר תעודת זהות (9 ספרות)</textarea>
@@ -82,7 +64,7 @@ h3{
         <h4>תאריך עליה</h4>
         <input type="date" />
       </div>
-      <div class="box" style="">
+      <div class="box">
         <h4>תאריך לידה</h4>
         <input type="date" />
         <input type="text" placeholder="כתובת" name="address" />
@@ -147,14 +129,19 @@ h3{
               <input type="radio" name="status" />גרוש/ה
            </td>
 
-            <td><input type="radio" name="israel" />כן
-              <input type="radio" name="israel" />לא/ה</td>
-            <td><input type="radio" name="friend" />כן
-              <input type="radio" name="friend" />לא</td>
-</td>
+            <td>
+              <input type="radio" name="israel" />כן
+              <input type="radio" name="israel" />לא/ה
+            </td>
+            <td>
+              <input type="radio" name="friend" />כן
+              <input type="radio" name="friend" />לא
+            </td>
 <br>
-            <td><input type="radio" name="Kupa" />לא
-              <input type="radio" name="Kupa" /> כן, שם הקופה </td>
+            <td>
+              <input type="radio" name="Kupa" />לא
+              <input type="radio" name="Kupa" /> כן, שם הקופה 
+            </td>
             
             <td>
               <input type="text" name="Kupa" id="Kupa"/>
@@ -165,10 +152,10 @@ h3{
 <br>
       <div class="box">
         <label for="email">כתובת דואר אלקטרוני</label>
-        <br><input type="email"
-        id="email" value="" placeholder="example@example.com">
-        </div>
-         <div class="box"> 
+        <br>
+        <input type="email"         id="email" value="" placeholder="example@example.com">
+      </div>
+    <div class="box"> 
         <label for="number">מספר טלפון</label> <br>
         <input type="number" placeholder="___/_______">
         </div>
@@ -180,7 +167,7 @@ h3{
 <div class="">
   <h3> 3.פרטים על ילדיי שבשנת המס טרם מלאו להם 19 שנה</h3>
 
-  <table>
+  <table class="eliya">
     <thead>
       <tr>
     <th> שם </th>
@@ -243,30 +230,43 @@ h3{
   </div>
 <div class="box" style="border: solid;">
   <h4>פרטים על הכנסותיי ממעביד זה</h4>
+</div>
+  <section>
+<span class="avital">
       <input type="checkbox" id="money"
       >
       <label for="month">משכורת חודש</label>
-<div>
+<span class="avital">
+
  <input type="checkbox" id="money"
       >      <label for="money">משכורת בעד משרה נוספת
-     
-      </div>
-<div>
+     </span>
+
+<span class="avital">
+
    <input type="checkbox" id="money"
       >
       <label for="money">משכורת חלקית</label>
-</div>
-<div>
+      </span>
+
+      <span class="avital">
+
  <input type="checkbox" id="money"
-      >      <label for="money">שכר עבודה (עובד יומי)</label></div> 
-<div>
- <input type="checkbox" id="money">      <label for="money">קצבה</label>
-      </div> 
-<div>
+      >      <label for="money">שכר עבודה (עובד יומי)</label>
+      </span>
+
+      <span class="avital">
+
+ <input type="checkbox" id="money">      <label for="money">קצבה</label></span>
+
+      <span class="avital">
+
    <input type="checkbox" id="money"
       >
-      <label for="money">מלגה</label></div> 
-</div>
+      <label for="money">מלגה</label></span>
+     </section>
+
+
 <br><br>
     <div>
         <h3>4.פרטים על בן/בת הזוג:</h3>
@@ -274,7 +274,7 @@ h3{
 מספר תעודת זהות (9 ספרות)</textarea>
         >-->
 
-        <input type="number" placeholder="מספר תעודת זהות" name="number" />
+        <input type="number" placeholder="מספר תעודת זהות" name="number" minlength="9" max="12" required/>
         <input type="text" placeholder=" שם פרטי" name="name" />
         <input type="text" placeholder="שם משפחה" name="address" />
      <label for="date"> ת.לידה</label>  <input type="date" /> 
@@ -292,7 +292,7 @@ h3{
   <label for="na"> אין לבין/לבת הזוג הכנסה נוספת</label>  
       
            <input type="checkbox" id="a">
-  <label style="b" for="a" value="m" name="a"> יש לבין/לבת הזוג הכנסה נוספת מ:</label>  
+  <label  for="a" value="m" name="a"> יש לבין/לבת הזוג הכנסה נוספת מ:</label>  
  
   <input type="checkbox" id="a1">
   <label for="a1" value="a1" name="a1">עבודה/קצבה/עסק</label>  
@@ -328,7 +328,7 @@ h3{
   </div>
 <br><br>
 
-  <div style="border: solid;">
+  <div style="border: 2px solid black;">
     <h3> 6.הצהרה</h3>
 <p>
 
@@ -336,15 +336,21 @@ h3{
 מס הכנסה. אני מתחייב/ת להודיע למעביד על כל שינוי שיחול בפרטיי האישיים ובפרטים דלעיל תוך שבוע ימים מתאריך השינוי.
   </p>
   <span style="text-align: center;">
-  תאריך:<input type="date"</span>
-  <span style="text-align: center;">חתימה_____________</span>
+  תאריך:<input type="date" > 
+</span>
+  <span id="ilay" style="text-align: center;">חתימה____________ או לחילופין חתום אלקטרונית
+      <input type="file">
+  </span>
+  <div>
+  <a href="https://go.docusign.com/trial/il-goog-trynow/?elqCampaignId=15442&utm_source=google&utm_medium=cpc&utm_campaign=branded_primary&utm_term=docusign&utm_content=international_IL&gclid=CjwKCAiA866PBhAYEiwANkIneLq-Trt3uG3t5apBf5D_nZlUEpvXUAEnyxWQ43holjEnn4eJGOA8uRoC0t0QAvD_BwE.pdf">לדוגמת חתימה הורד את הקובץ</a>
+</div> 
     </div>
 
 <br><br>
 <span style="background-color: khaki;">
      <button>שלח את הטופס</button>
      </span>
-      
+       
     </form>
   </body>
 </html>
